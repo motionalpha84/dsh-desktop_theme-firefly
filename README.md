@@ -27,6 +27,37 @@ dock 工具条与表情彩蛋。
 
 ## 下载与安装
 
+### 命令行安装（推荐）
+
+桌面端请先完全退出 DSH，再使用**桌面端自带的 `dsh` 命令**运行：
+
+```sh
+dsh plugin --profile desktop add "github:motionalpha84/dsh-desktop_theme-firefly#v0.1.1"
+```
+
+安装后重新打开 DSH 桌面端，检查插件管理中的 `dsh-theme-firefly` 已启用。
+命令固定安装本仓库的 `v0.1.1`，安装包已经包含编译后的客户端和壁纸。
+
+Web profile 使用：
+
+```sh
+dsh plugin --profile web add "github:motionalpha84/dsh-desktop_theme-firefly#v0.1.1"
+```
+
+安装后重启对应的 Web profile。这里的 `desktop` 和 `web` 是安装目标，
+请使用与你正在运行的 DSH 界面对应的 profile。
+
+命令遵循 [DSH 官方 CLI 插件管理机制](https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/reference/README.md#plugin-management)。
+本仓库的 `dsh.bundle` 元数据会让 CLI 自动将插件加入目标 profile。
+
+桌面端卸载时同样先完全退出 DSH，然后运行：
+
+```sh
+dsh plugin --profile desktop remove dsh-theme-firefly
+```
+
+### 下载本地安装包
+
 1. 在 [Releases](https://github.com/motionalpha84/dsh-desktop_theme-firefly/releases) 下载
    `dsh-theme-firefly-0.1.1.tgz`。
 2. 在 DSH 插件管理中安装该本地插件包。
