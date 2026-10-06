@@ -1,0 +1,56 @@
+{
+  "name": "dsh-theme-firefly",
+  "version": "0.1.1",
+  "description": "崩坏：星穹铁道 · 流萤主题 —— 精简定制版：固定 firefly3 壁纸、萤火绿按钮与 12 颗星点，高亮和滚动条使用流萤银灰；Windows 顶栏与窗口按钮统一深空底色；侧栏单层 55% 不透明 + 4px 磨砂、底部 24px 淡出；设置窗口暖浅灰底与深色文字；会话区单层 40% 不透明与官方圆角，实色输入卡片、透明外围及正文裁切",
+  "author": "motionalpha84",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motionalpha84/dsh-desktop_theme-firefly.git"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "prepack": "node build.cjs --clean"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "theme",
+    "firefly",
+    "honkai-star-rail"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Liu-ZA-81",
+      "url": "https://github.com/Liu-ZA-81"
+    }
+  ],
+  "homepage": "https://github.com/motionalpha84/dsh-desktop_theme-firefly#readme",
+  "bugs": {
+    "url": "https://github.com/motionalpha84/dsh-desktop_theme-firefly/issues"
+  }
+}

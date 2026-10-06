@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Preserve the verified client bytes and reproducible embedded asset build.
+lib/client.template.js -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+lib/client.js -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
